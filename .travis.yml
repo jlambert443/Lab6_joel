@@ -1,14 +1,14 @@
+sudo: required
+
 branches:
   only:
     - master
 
-  cache:
-      directories:
-      - $HOME/cache
+cache:
+  directories:
+    - $HOME/cache
 
-sudo: required
-
-service:
+services:
   - docker
 
 before_install:
